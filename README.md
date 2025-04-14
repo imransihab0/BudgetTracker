@@ -35,7 +35,7 @@ Clone this repository to your local machine:
 git clone https://github.com/yourusername/BudgetTracker.git
 ```
 
-## Step 2: Configure the MySQL Database
+### Step 2: Configure the MySQL Database
 
 - Start XAMPP and ensure MySQL is running. 🔴
 - Open phpMyAdmin in your browser (usually at `http://localhost/phpmyadmin`). 🖥️
@@ -52,7 +52,7 @@ CREATE TABLE budgets (
 );
 ```
 
-## Step 3: Configure the Database Connection
+### Step 3: Configure the Database Connection
 
 Update the `DBConnection.java` file to match your MySQL setup. Change the following:
 
@@ -62,7 +62,7 @@ private static final String USER = "root";  // Your MySQL username
 private static final String PASS = "";  // Your MySQL password (default is empty for XAMPP)
 ```
 
-## Step 4: Deploy the Project to Tomcat
+### Step 4: Deploy the Project to Tomcat
 
 - Copy the entire project folder to the `webapps` directory of your Tomcat server. 📂
 - Start Tomcat by running `startup.bat` (in the `bin` folder). ⚡
@@ -70,7 +70,7 @@ private static final String PASS = "";  // Your MySQL password (default is empty
 
 ---
 
-## Step 5: Using the Application
+### Step 5: Using the Application
 
 - **Add a budget**: Enter a title, amount, and details, then click "Add Budget." 💡
 - **Edit a budget**: Click "Edit" next to the budget you want to modify. ✏️
