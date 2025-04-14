@@ -4,6 +4,7 @@
 <head>
     <title>Budget Tracker</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
 </head>
 <body>
 <div class="container">
@@ -24,7 +25,7 @@
                 Statement stmt = con.createStatement();
                 ResultSet rs = stmt.executeQuery("SELECT * FROM budgets");
                 
-                //  the SimpleDateFormat to format the timestamp
+                // Initialize the SimpleDateFormat to format the timestamp
                 SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd; HH:mm:ss");
 
                 while(rs.next()) {
